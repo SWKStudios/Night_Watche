@@ -17,7 +17,10 @@
 	<!-- IF S_ENABLE_FEEDS_FORUM and S_FORUM_ID --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FORUM} - {FORUM_NAME}" href="{U_FEED}?f={S_FORUM_ID}" /><!-- ENDIF -->
 	<!-- IF S_ENABLE_FEEDS_TOPIC and S_TOPIC_ID --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_TOPIC} - {TOPIC_TITLE}" href="{U_FEED}?f={S_FORUM_ID}&amp;t={S_TOPIC_ID}" /><!-- ENDIF -->
 <!-- ENDIF -->
-
+<link rel="stylesheet" href="{ROOT_PATH}font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="{ROOT_PATH}font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
 <link href="{T_STYLESHEET_LINK}" rel="stylesheet" type="text/css" />
 
 <!--
@@ -147,30 +150,26 @@
 </script>
 <script type="text/javascript" src="{T_TEMPLATE_PATH}/editor.js"></script>
 <!-- ENDIF -->
-
 </head>
 <!-- Top Banner - custom addition top crystal cove logo & navigation bar ~swk -->
-    <div class="top-banner-bg"><div class="top-banner-container"><div class="top-banner">
-        <div class="top-logo-css">
-            <a href="<?php echo get_option('home'); ?>"/>Crystal Cove</a>
-        </div>
-        <div class="top-social-media">
-            <a href="http://facebook.com"><i class="fa fa-facebook-square"></i></a>
-            <a href="http://twitter.com"><i class="fa fa-twitter-square"></i></a>
-            <a href="http://twitch.tv/crystal_cove">
-                <IMG SRC="./../../wp-content/themes/nightwatche/images/icons/twitch.png" 
-                onmouseover="this.src='./../../wp-content/themes/nightwatche/images/icons/twitch2.png'"
-                onmouseout="this.src='./../../wp-content/themes/nightwatche/images/icons/twitch.png'"></a>
-        </div>
+    <div class="top-banner-container"><a href="http://crystalcove.io"><div class="top-logo"></div></a>
     </div></div></div>
 <!-- Top Banner ~swk -->
 <body id="phpbb" class="section-{SCRIPT_NAME} {S_CONTENT_DIRECTION}">
 
-<div id="header">
-    <a href="{U_INDEX}" title="{L_INDEX}" id="logo">{SITE_LOGO_IMG}</a>
-    <h1>{SITENAME}</h1>
-    <p>{SITE_DESCRIPTION}</p>
+<!-- Banner ~SWK-->
+<div class="homepage-banner-container">
+<span class="top-social-media">
+    <i class="fa fa-facebook-square"></i></a>
+    <a href="http://twitter.com"><i class="fa fa-twitter-square"></i></a>
+    <a href="http://twitch.tv/crystal_cove">
+        <IMG SRC="{T_IMAGESET_PATH}/twitch.png" 
+        onmouseover="this.src='{T_IMAGESET_PATH}/twitch2.png'"
+        onmouseout="this.src='{T_IMAGESET_PATH}/twitch.png'"></a>
+</span>
+<a href="http://crystalcove.io"><div class="homepage-banner"></div></a>
 </div>
+<!-- Banner ~SWK-->
 
 <div id="page-header" class="container-block">
     <!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
@@ -205,7 +204,8 @@
         <!-- IF not S_IS_BOT -->
             <!-- IF S_DISPLAY_MEMBERLIST --><a href="{U_MEMBERLIST}" title="{L_MEMBERLIST_EXPLAIN}"><span></span>{L_MEMBERLIST}</a> <!-- ENDIF -->
             <!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) --><a href="{U_REGISTER}"><span></span>{L_REGISTER}</a> <!-- ENDIF -->
-             <a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x"><span></span>{L_LOGIN_LOGOUT}</a> 
+            <a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x"><span></span><!-- IF S_USER_LOGGED_IN -->Logout<!-- ELSE --> Login <!-- ENDIF --></a>
+            <!-- IF U_MCP --><a href="{U_MCP}" title="{L_MCP}"><span></span>{L_MCP}</a><!-- ENDIF -->
         <!-- ENDIF -->
 	        <a href="javascript:void(0);" class="responsive-menu-hide" style="display:none;"><span></span>X</a>
 		</div>

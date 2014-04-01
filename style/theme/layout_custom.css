@@ -17,6 +17,49 @@ a:hover {
 #page-body {
     padding-bottom: 5px;
 }
+/* Top Banner ~ Logo and Social Media Links */
+.top-banner-container{
+	height:42px;
+    background-color: #121212;
+	margin-bottom: 0;
+	width: 100%;
+}
+.top-logo{
+    background-image: url(./images/logo.png);
+	height: 100%;
+	background-size: 300px 100%;
+	background-repeat: no-repeat;
+    }
+.top-social-media {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px;
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+.top-social-media img {
+    float:right;
+    height: 35px;
+    margin: 2px 5px 0 15px;
+}
+/* Header */
+.homepage-banner-container{
+	height:180px;
+	margin:0 auto;
+	background-color: #40434E;
+	text-align: center;
+	border: 0;
+	margin-bottom: 0;
+    position:relative;
+	/* #40434E;*/
+}
+.homepage-banner{
+	background-image: url(./images/banner.png);
+	height: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
 /*breadcrumbs*/
 .nav-links {
     color: rgb(102, 102, 102);
@@ -24,6 +67,10 @@ a:hover {
     border: 4px solid #090909;
     border-radius: 5px;
     margin: 10px 0;
+}
+#page-body .nav-extra {
+    margin-top: 20px;
+    margin-right: 15px;
 }
 /* general forum and topic styling */
 li.header dt, li.header dd, ul.topiclist li.header a, ul.topiclist li.header a:visited {
@@ -70,10 +117,31 @@ a.forumtitle, a.forumtitle:visited, a.topictitle, a.topictitle:visited {
     font-weight: bold;
     color: rgb(230, 230, 230);
 }
+/* extra */
+#search-box input[type="text"] { color: #FFF;}
+#search-box input[type="text"]:hover, #search-box input[type="text"]:focus {color: #999;}
+.Header {
+    border: 4px solid #222;
+    border-radius: 5px;
+    background-color: #111;
+    margin: 0px;
+    padding: 5px;
+}
+.Header a, Header a:visited {
+    color: #999999;
+    }
+.Panel {
+    background-color: #202020;
+    border: 4px solid #111111;
+    border-radius: 5px;   
+    margin-top: 10px;
+    padding: 10px;
+}
 /* footer */
-#footer {
-background:none;
-background-color: #0F0F0F;
+#footer, #footer .copyright a:hover, #footer .copyright strong a {
+    background:none;
+    background-color: #0F0F0F;
+    color: #999;
 }
 #Footer {
 background-color: #222;
@@ -108,51 +176,4 @@ border-radius:0;
     font-weight: normal;
     font-weight: bold;
     text-shadow: .25px .25px 1px gray;
-}
-
-/* Top Banner ~ Logo and Social Media Links */
-.top-banner-bg{
-	background-color: #121212;
-	margin-bottom: 10px;
-	width: 100%;
-}
-.top-banner-container{
-	height:42px;
-	margin:0 auto;
-	/*background-color: #222;*/
-	/*border: 10px solid #222;*/
-	text-align: center;
-	/* #40434E;*/
-}
-.top-banner{
-	height: 100%;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	text-align:left;
-}
-.top-logo{
-}
-.top-logo-css{
-	line-height: 1em;
-	font-family: 'Bookman Old Style', serif;
-	color: #0836f0;
-	opacity: .8;
-	font-weight: bold;
-	font-size: 32px;
-	float:left;
-	margin-top: 5px;
-}
-.top-logo-css> a:hover, .top-logo-css> a:active, .top-logo-css> a:link, .top-logo-css> a:visited {
-    text-decoration: none;
-    color: #0836f0;
-}
-.top-social-media {
-	margin: 2px 0px 0px 0px;
-    float:right;
-    font-weight: bold;
-    font-size: 40px;
-}
-.top-social-media img {
-    height: 35px;
-    margin: 0 0 10px 0;
 }

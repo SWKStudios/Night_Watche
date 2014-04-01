@@ -28,11 +28,6 @@
 .postbody .ignore {
 }
 
-.postbody h3.first, .postbody h3.first a {
-	/* The first post on the page uses this */
-    color: #f36b42 !important;
-}
-
 .postbody h3 {
 	/* Postbody requires a different h3 format - so change it here */
 	padding: 2px 0 0 0;
@@ -44,9 +39,6 @@
 	font-size: 16px;
     font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
 }
-.postbody h3, .postbody h3 a, .postbody h3 a:visited { color: #36bb55; }
-.postbody h3 a:hover { color: #f36b42; }
-
 .postbody h3 img {
 	/* Also see tweaks.css */
 	vertical-align: bottom;

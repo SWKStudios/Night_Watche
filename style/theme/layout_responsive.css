@@ -1,4 +1,4 @@
-@media only screen and (max-width: 700px), only screen and (max-device-width: 700px)
+@media only screen and (max-width: 1000px), only screen and (max-device-width: 1000px)
 {
 	body { min-width: 320px; }
 
@@ -29,7 +29,7 @@
 	.responsive-menu-visible .responsive-menu-hide { display: block !important; }
 }
 
-@media only screen and (max-width: 700px), only screen and (max-device-width: 700px)
+@media only screen and (max-width: 1000px), only screen and (max-device-width: 1000px)
 {
 	/* footer */
 	#footer {
@@ -231,7 +231,7 @@
 	}
 }
 
-@media only screen and (max-width: 620px), only screen and (max-device-width: 620px)
+@media only screen and (max-width: 820px), only screen and (max-device-width: 820px)
 {
 	/* forums/topics lists */
 	ul.topiclist dt { 
